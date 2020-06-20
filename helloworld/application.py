@@ -6,9 +6,9 @@ from flask import (
     make_response
 )
 
-from .domain.service import get_workbooks, get_workbook
-from .domain.pdf import PdfWriter
-from .flaskrun import flaskrun
+from helloworld.domain.service import get_workbooks, get_workbook
+from helloworld.domain.pdf import PdfWriter
+from helloworld.flaskrun import flaskrun
 
 
 application = Flask(__name__)

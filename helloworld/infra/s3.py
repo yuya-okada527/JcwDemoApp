@@ -2,7 +2,7 @@ from functools import lru_cache
 
 from boto3.session import Session
 
-from ..config import settings
+from helloworld.config import settings
 
 
 class S3Client:

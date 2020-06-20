@@ -1,8 +1,8 @@
 from functools import lru_cache
 from typing import List
 
-from .models import WorkBook
-from ..infra.s3 import S3Client
+from helloworld.domain.models import WorkBook
+from helloworld.infra.s3 import S3Client
 
 
 WORKBOOK_PREFIX = "materials/workbooks"

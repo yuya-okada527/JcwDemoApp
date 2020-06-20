@@ -3,7 +3,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .enums import Env
+from helloworld.enums import Env
 
 
 ENV_FILE = os.path.join(

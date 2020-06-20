@@ -1,7 +1,7 @@
 import logging
 
-from .enums import Env
-from .config import settings
+from helloworld.enums import Env
+from helloworld.config import settings
 
 
 def create_logger(file_name: str):

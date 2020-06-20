@@ -7,7 +7,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Table, TableStyle
 from reportlab.lib.units import mm
 
-from ..infra.s3 import S3Client
+from helloworld.infra.s3 import S3Client
 
 
 FONT_KEY = "fonts/ttf/JapaneseLearners1.ttf"
