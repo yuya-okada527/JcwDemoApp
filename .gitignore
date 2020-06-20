@@ -1,0 +1,6 @@
+# 設定ファイル
+venv/
+.idea/
+.env
+
+*__pycache__/
