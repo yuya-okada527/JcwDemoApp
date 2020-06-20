@@ -1,6 +1,7 @@
 Welcome to the AWS CodeStar sample web service
 ==============================================
 
+
 This sample code helps get you started with a simple Flask web service
 deployed by AWS Elastic Beanstalk and AWS CloudFormation.
 
