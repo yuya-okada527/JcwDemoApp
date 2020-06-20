@@ -4,7 +4,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from helloworld.enums import Env
+from helloworld.logger import create_logger
 
+log = create_logger(__file__)
 
 ENV_FILE = os.path.join(
     Path(__file__).resolve().parents[1],
@@ -24,6 +26,7 @@ class __Settings:
     def __init__(self, path=ENV_FILE):
         # 指定パスに.envファイルが存在する場合読み込む
         if os.path.exists(path):
+            log.info(".env file exists loading from it")
             load_dotenv(path, verbose=True)
 
         # 環境変数をセット
