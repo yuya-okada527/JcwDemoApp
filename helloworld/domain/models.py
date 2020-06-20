@@ -1,7 +1,5 @@
-import dataclasses
-
-
-@dataclasses.dataclass(frozen=True)
 class WorkBook:
-    key: str
-    name: str
+
+    def __init__(self, key: str, name: str):
+        self.key = key
+        self.name = name
