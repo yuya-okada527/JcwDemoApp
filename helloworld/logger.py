@@ -1,7 +1,7 @@
 import logging
 
 from helloworld.enums import Env
-from helloworld.config import settings
+# from helloworld.config import settings
 
 
 def create_logger(file_name: str):
@@ -9,12 +9,13 @@ def create_logger(file_name: str):
     log = logging.getLogger(file_name)
 
     # ログレベルの設定
-    if settings.env == Env.PROD:
-        # 本番環境はINFO
-        log.setLevel(logging.INFO)
-    else:
-        # それ以外はDEBUG
-        log.setLevel(logging.DEBUG)
+    # if settings.env == Env.PROD:
+    #     # 本番環境はINFO
+    #     log.setLevel(logging.INFO)
+    # else:
+    #     # それ以外はDEBUG
+    #     log.setLevel(logging.DEBUG)
+    log.setLevel(logging.DEBUG)
 
     # 標準出力に出力する
     handler = logging.StreamHandler()
